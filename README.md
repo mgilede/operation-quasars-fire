@@ -64,7 +64,7 @@ http://localhost
 - The last endpoint is intended to clear or wipe the DB in order to be able to start over the proccess of storing parts of the message. This endpoint works over `DELETE` on the path `/topsecret_split/`.
 
 ## API requests in cURL
-# First Endpoint `POST` => `/topsecret/`
+## First Endpoint `POST` => `/topsecret/`
 ```sh
 $ curl --request POST \
   --url http://operation-quasars-fire.codemg.com/topsecret \
@@ -89,7 +89,7 @@ $ curl --request POST \
 	]
 }'
 ```
-# Second Endpoint `POST` => `/topsecret_split/satellite_name`
+## Second Endpoint `POST` => `/topsecret_split/satellite_name`
 ```sh
 $ curl --request POST \
   --url http://operation-quasars-fire.codemg.com/topsecret_split/skywalker \
@@ -100,12 +100,12 @@ $ curl --request POST \
 		"message": ["", "es", "", "", "secreto"]
 	}'
 ```
-# Third Endpoint `GET` => `/topsecret_split/`
+## Third Endpoint `GET` => `/topsecret_split/`
 ```sh
 $ curl --request GET \
   --url http://operation-quasars-fire.codemg.com/topsecret_split/
 ```
-# Third Endpoint `DELETE` => `/topsecret_split/`
+## Third Endpoint `DELETE` => `/topsecret_split/`
 ```sh
 $ curl --request DELETE \
   --url http://stg-operation-quasars-fire.codemg.com/topsecret_split
